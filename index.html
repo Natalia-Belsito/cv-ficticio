@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega N°1-CV ficticio-Natalia S. Belsito</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8544125d88.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="usuario.jpg">
+</head>
+
+<body>
+    <header class="header"> 
+      <nav class="nav">    
+        <h1>Curriculum Vitae</h1>   
+        <ul>
+            <li><a href="#Información Personal">Información Personal</a></li>
+            <li><a href="#Experiencia Laboral">Experiencia Laboral</a></li>
+            <li><a href="#demo">Nivel Educativo</a></li>
+            <li><a href="#Habilidades">Habilidades</a></li>
+        </ul>  
+      </nav>  
+    </header>
+       
+    <h2 id="Información Personal">Información Personal <i class="fa-solid fa-id-badge"></i></h2>
+    <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Foto de perfil"/>
+    <p>Apellido y Nombre: Mariana Davis</p>
+    <p>Fecha de nacimiento: 24/04/1990</p> 
+    <p>Nacionalidad: Argentina</p>
+    <p>Estado Civil: Soltera</p>
+    <p>Domicilio: Av. del Sol 5896</p>
+    <p>Teléfono: 1189635974</p>  
+    <p>Email: mariana.davis@gmail.com</p>
+
+<!--Para que la edad no quede fija en la web y se pueda calcular cuando se mire el CV-->
+    <form>
+        <label>Año actual
+            <input class="años" type="numero" id="numero1">
+        </label>
+        <label>Año de nacimiento
+            <input class="años" type="numero" id="numero2">
+        </label>
+        <button type="button" id="restar">Calcular Edad</button>
+    </form>
+
+    <div id="contenedorresultado">
+        <p> La edad es de</p> <p id ="resultado"></p> <p>años.</p>
+    </div>
+
+    <h2 id="Experiencia Laboral">Experiencia Laboral <i class="fa-solid fa-briefcase"></i></h2>
+
+    <pre>Empresa: Coto
+Período: desde 2/2021
+Puesto:  Gerente de Recursos Humanos</pre>
+    <pre>Empresa: Carrefour
+Período: 8/2015-9/2020
+Puesto:  Asistente de Recursos Humanos</pre>
+    <pre>Empresa: Walmart
+Período: 11/2012-5/2015
+Puesto:  Cajera</pre>
+
+    <button class="botones" onclick="myFunction()">Ver otra Experiencia Laboral</button>
+
+    <pre id="experiencia"></pre>
+
+    <h2 id="demo">Nivel Educativo / Título obtenido
+    <button type="button" id="boton">Ver información</button>
+    </h2>
+
+    <h2 id="Habilidades">Habilidades <i class="fa-solid fa-lightbulb"></i></h2>
+    <ul>
+        <li>Proactividad</li>
+        <li>Capacidad Resolutiva</li>
+        <li>Comunicación asertiva</li>
+        <li>Toma de desiciones</li>
+        <li>Manejo de problemas y conflictos</li>
+        <li>Capacidad de trabajar en equipo</li>
+    </ul>
+
+    <h3 class="pregunta">¿Considera que soy una posible candidata para el puesto?</h3>
+    <label for="opinion">Seleccione su respuesta: </label>
+     <select id="opinion">
+       <option value="">--Haga una elección--</option>
+       <option value="si">Si</option>
+       <option value="no">No</option>
+     </select>
+
+    <p id="aclaracion"></p>
+
+<script src="comportamiento.js"></script>
+</body>
+</html>
